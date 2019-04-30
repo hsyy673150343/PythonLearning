@@ -1,0 +1,5 @@
+Tue, 15 Jan 2019 16:40:19 logging模块.py[line:34] DEBUG debug message
+Tue, 15 Jan 2019 16:40:19 logging模块.py[line:35] INFO info message
+Tue, 15 Jan 2019 16:40:19 logging模块.py[line:36] WARNING warning message
+Tue, 15 Jan 2019 16:40:19 logging模块.py[line:37] ERROR error message
+Tue, 15 Jan 2019 16:40:19 logging模块.py[line:38] CRITICAL critical message

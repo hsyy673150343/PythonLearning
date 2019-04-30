@@ -1,0 +1,8 @@
+2019-01-15 17:04:00,814 - root - WARNING - logger warning message
+2019-01-15 17:04:00,814 - root - ERROR - logger error message
+2019-01-15 17:04:00,814 - root - CRITICAL - logger critical message
+2019-01-15 17:12:19,959 - root - DEBUG - logger debug message
+2019-01-15 17:12:19,960 - root - INFO - logger info message
+2019-01-15 17:12:19,960 - root - WARNING - logger warning message
+2019-01-15 17:12:19,960 - root - ERROR - logger error message
+2019-01-15 17:12:19,960 - root - CRITICAL - logger critical message
