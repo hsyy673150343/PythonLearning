@@ -41,7 +41,7 @@ cursor = conn.cursor()
 #
 # cursor.executemany('insert into 藏汉词典(音节, 解释) values(%s,%s)', word_dic())
 
-# 更新数据
+# 修改数据
 # cursor.execute('update test1 set name = %s where age = %s', ('王明', 22))
 
 # 删除数据
