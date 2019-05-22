@@ -28,18 +28,19 @@ cursor = conn.cursor()
 # cursor.executemany('insert into test1(name, age) values(%s,%s)', inp)
 
 
-def word_dic():
-    with open('D:\全藏字快速排序\藏汉词典.txt', 'r', encoding='utf-16') as f:
-        li = []
-        for i in f.readlines():
-            x = i.split('\t')
-            li.append(x)
-        for j in li:
-            yield (j[0],j[1])
-
-
-cursor.executemany('insert into 藏汉词典(音节, 解释) values(%s,%s)', word_dic())
+# def word_dic():
+#     with open('D:\全藏字快速排序\藏汉词典.txt', 'r', encoding='utf-16') as f:
+#         li = []
+#         for i in f.readlines():
+#             x = i.split('\t')
+#             li.append(x)
+#         for j in li:
+#             yield (j[0],j[1])
+#
+#
+# cursor.executemany('insert into 藏汉词典(音节, 解释) values(%s,%s)', word_dic())
 
 conn.commit()
 cursor.close()
 conn.close()
+
