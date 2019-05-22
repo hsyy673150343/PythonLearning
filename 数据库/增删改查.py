@@ -15,6 +15,7 @@ cursor = conn.cursor()
 # sql_fina = sql % (inp_name, inp_age)
 # cursor.execute(sql_fina)
 
+# 增加数据
 # 参数传递----必须使用这种参数传入的方式
 # inp_name = input('请输入姓名：')
 # inp_age = input('请输入年龄：')
@@ -39,6 +40,53 @@ cursor = conn.cursor()
 #
 #
 # cursor.executemany('insert into 藏汉词典(音节, 解释) values(%s,%s)', word_dic())
+
+# 更新数据
+# cursor.execute('update test1 set name = %s where age = %s', ('王明', 22))
+
+# 删除数据
+# cursor.execute('delete from test1 where age = %s', (21,))
+
+# 查询数据----可以不用commit()
+# row = cursor.execute('select *from test1')
+# print(row)
+
+# result = cursor.fetchall()
+# print(result)
+
+# result = cursor.fetchone()
+# print(result)
+
+# result = cursor.fetchmany(2)
+# print(result)
+
+# result = cursor.fetchone()
+# print(result)
+# result = cursor.fetchone()
+# print(result)
+# result = cursor.fetchone()
+# print(result)
+
+# result = cursor.fetchone()
+# print(result)
+# result = cursor.fetchone()
+# print(result)
+# cursor.scroll(0,mode='absolute') # 相对绝对位置移动
+# result = cursor.fetchone()
+# print(result)
+
+
+# result = cursor.fetchone()
+# print(result)
+# result = cursor.fetchone()
+# print(result)
+# cursor.scroll(0,mode='relative')  # 相对当前位置移动 -1, 0, 1.....
+# result = cursor.fetchone()
+# print(result)
+
+cursor.execute('select *from test1 where name=%s',('洪松',))
+# print(cursor.fetchall())#(('洪松', 24),)
+print(cursor.fetchone())#('洪松', 24)
 
 conn.commit()
 cursor.close()
